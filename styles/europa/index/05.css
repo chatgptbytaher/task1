@@ -1,0 +1,289 @@
+
+    /* Europa section refinements: ordinary layouts using the original template's type and colors. */
+    #passes .europa-pass-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      align-items: stretch;
+      margin-top: 32px
+    }
+
+    #passes .europa-pass-card {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      min-width: 0;
+      padding: 28px;
+      border: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+      border-radius: 8px;
+      background: transparent;
+      color: inherit
+    }
+
+    #passes .europa-pass-card h3 {
+      margin: 0;
+      font: inherit;
+      font-size: 1.25rem;
+      font-weight: 600
+    }
+
+    #passes .europa-pass-price {
+      font-size: clamp(2rem, 3vw, 3rem);
+      line-height: 1.05;
+      font-weight: 600;
+      letter-spacing: -.04em;
+      margin: 0
+    }
+
+    #passes .europa-pass-card p {
+      margin: 0;
+      max-width: 38ch
+    }
+
+    #passes .europa-pass-card ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 0 0 0 18px;
+      margin: 0
+    }
+
+    #passes .europa-pass-card .europa-pass-action {
+      margin-top: auto;
+      padding-top: 8px
+    }
+
+    #passes .europa-pass-action a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 12px 18px;
+      border: 1px solid currentColor;
+      border-radius: 4px;
+      color: inherit;
+      text-decoration: none
+    }
+
+    /* Speaker profiles: plain vertical list, not a testimonial carousel or fake review cards. */
+    #speakers .testimonial_cards {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+      margin-top: 28px
+    }
+
+    #speakers .testimonial_card {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 8px 28px;
+      align-items: start;
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      padding: 22px 0;
+      border: 0;
+      border-top: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      transform: none
+    }
+
+    #speakers .testimonial_card h3 {
+      grid-column: 1;
+      margin: 0;
+      font: inherit;
+      font-size: 1.15rem;
+      font-weight: 600
+    }
+
+    #speakers .testimonial_card p {
+      grid-column: 2;
+      margin: 0;
+      max-width: 65ch
+    }
+
+    #speakers .testimonial_card p+p {
+      grid-column: 2;
+      opacity: .8
+    }
+
+    /* FAQ: one clean accordion column with understated dividers. */
+    #faq .europa-faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+      max-width: 900px;
+      margin: 32px auto 0;
+      border-top: 1px solid color-mix(in srgb, currentColor 22%, transparent)
+    }
+
+    #faq .europa-faq-item {
+      border: 0;
+      border-bottom: 1px solid color-mix(in srgb, currentColor 22%, transparent);
+      border-radius: 0;
+      padding: 0;
+      color: inherit;
+      background: transparent;
+      box-shadow: none
+    }
+
+    #faq .europa-faq-item summary {
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px 0;
+      font: inherit;
+      font-weight: 600
+    }
+
+    #faq .europa-faq-item summary::-webkit-details-marker {
+      display: none
+    }
+
+    #faq .europa-faq-item summary:after {
+      content: '+';
+      font-size: 1.25rem;
+      font-weight: 400;
+      flex: none
+    }
+
+    #faq .europa-faq-item[open] summary:after {
+      content: '−'
+    }
+
+    #faq .europa-faq-answer {
+      padding: 0 36px 22px 0;
+      max-width: 75ch
+    }
+
+    #faq .europa-faq-answer p {
+      margin: 0
+    }
+
+    /* Contact: conventional copy/form split; fields stay in one straightforward column. */
+    #contact .europa-contact-layout {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+      gap: clamp(32px, 7vw, 100px);
+      align-items: start;
+      margin-top: 28px
+    }
+
+    #contact .europa-contact-copy {
+      max-width: 48ch
+    }
+
+    #contact .europa-contact-copy p {
+      max-width: 42ch
+    }
+
+    #contact .europa-contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      max-width: 640px;
+      margin: 0
+    }
+
+    #contact .europa-form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 7px
+    }
+
+    #contact .europa-contact-form label {
+      font: inherit;
+      font-size: .92rem
+    }
+
+    #contact .europa-contact-form input,
+    #contact .europa-contact-form select,
+    #contact .europa-contact-form textarea {
+      display: block;
+      width: 100%;
+      min-height: 48px;
+      padding: 12px 14px;
+      border: 1px solid color-mix(in srgb, currentColor 24%, transparent);
+      border-radius: 4px;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      box-sizing: border-box;
+      box-shadow: none
+    }
+
+    #contact .europa-contact-form input:focus,
+    #contact .europa-contact-form select:focus,
+    #contact .europa-contact-form textarea:focus {
+      outline: 2px solid currentColor;
+      outline-offset: 2px
+    }
+
+    #contact .europa-contact-form textarea {
+      min-height: 140px;
+      resize: vertical
+    }
+
+    #contact .europa-contact-form button {
+      align-self: flex-start;
+      min-height: 46px;
+      padding: 12px 24px;
+      border: 1px solid currentColor;
+      border-radius: 4px;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      cursor: pointer
+    }
+
+    #contact .europa-form-note {
+      font-size: .85rem;
+      opacity: .75;
+      margin: 0
+    }
+
+    @media(max-width:900px) {
+      #passes .europa-pass-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+      }
+
+      #contact .europa-contact-layout {
+        grid-template-columns: 1fr;
+        gap: 28px
+      }
+    }
+
+    @media(max-width:640px) {
+      #passes .europa-pass-grid {
+        grid-template-columns: 1fr
+      }
+
+      #passes .europa-pass-card {
+        padding: 22px
+      }
+
+      #speakers .testimonial_card {
+        grid-template-columns: 1fr;
+        gap: 6px;
+        padding: 18px 0
+      }
+
+      #speakers .testimonial_card h3,
+      #speakers .testimonial_card p,
+      #speakers .testimonial_card p+p {
+        grid-column: 1
+      }
+
+      #faq .europa-faq-answer {
+        padding-right: 0
+      }
+    }
+  

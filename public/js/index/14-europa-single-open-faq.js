@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded', function () { document.querySelectorAll('.europa-faq-list').forEach(function (list) { list.querySelectorAll('details').forEach(function (item) { item.addEventListener('toggle', function () { if (item.open) { list.querySelectorAll('details').forEach(function (other) { if (other !== item) other.open = false; }); } }); }); }); });

@@ -1,0 +1,115 @@
+
+    html.w-mod-js:not(.w-mod-ix3):is([data-stroke="no"]) {
+      visibility: hidden !important;
+    }
+
+    html.w-mod-js:not(.w-mod-ix3):is([data-stroke="no"]) * {
+      visibility: hidden !important;
+    }
+
+    html.w-mod-js:not(.w-mod-ix3):is([data-stroke="yes"]) {
+      visibility: hidden !important;
+    }
+
+    html.w-mod-js:not(.w-mod-ix3):is([data-stroke="yes"]) * {
+      visibility: hidden !important;
+    }
+
+    html.w-mod-js:not(.w-mod-ix3):is([data-title-anim]) {
+      visibility: hidden !important;
+    }
+
+    html.w-mod-js:not(.w-mod-ix3):is([data-title-anim]) * {
+      visibility: hidden !important;
+    }
+
+    html.w-mod-js:not(.w-mod-ix3):is([data-text-anim]) {
+      visibility: hidden !important;
+    }
+
+    html.w-mod-js:not(.w-mod-ix3):is([data-text-anim]) * {
+      visibility: hidden !important;
+    }
+
+    html.w-mod-js:not(.w-mod-ix3):is([data-text-reveal]) {
+      visibility: hidden !important;
+    }
+
+    html.w-mod-js:not(.w-mod-ix3):is([data-text-reveal]) * {
+      visibility: hidden !important;
+    }
+
+    html.w-mod-js:not(.w-mod-ix3):is([data-preloader-logo]) {
+      visibility: hidden !important;
+    }
+
+    html.w-mod-js:not(.w-mod-ix3):is([data-preloader-logo]) * {
+      visibility: hidden !important;
+    }
+
+    html.w-mod-js:not(.w-mod-ix3):is([data-hero-title]) {
+      visibility: hidden !important;
+    }
+
+    html.w-mod-js:not(.w-mod-ix3):is([data-hero-title]) * {
+      visibility: hidden !important;
+    }
+
+    html.w-mod-js:not(.w-mod-ix3):is([data-hero-subtitle]) {
+      visibility: hidden !important;
+    }
+
+    html.w-mod-js:not(.w-mod-ix3):is([data-hero-subtitle]) * {
+      visibility: hidden !important;
+    }
+
+    html.w-mod-js:not(.w-mod-ix3):is([data-hero-text]) {
+      visibility: hidden !important;
+    }
+
+    html.w-mod-js:not(.w-mod-ix3):is([data-hero-text]) * {
+      visibility: hidden !important;
+    }
+
+    html.w-mod-js:not(.w-mod-ix3) :is(:is([data-button-primary], [data-button-primary]) [data-button-text], [data-stroke="no"], [data-stroke="yes"], :is(.canvas_menu_link, .canvas_menu_link) .canvas_menu_active_bg, :is(.canvas_menu_link, .canvas_menu_link) [data-menu-text]:nth-of-type(1), :is(.canvas_menu_link, .canvas_menu_link) [data-menu-text]:nth-of-type(2), .canvas_menu, .brands_ticker_row, [data-title-anim], *:has(> [data-title-anim]) [data-floating-badge], [data-text-anim], [data-text-reveal], [data-preloader-logo], .preloader, .hero_image, [data-hero-title], [data-hero-subtitle], [data-hero-text], .hero_social_links, .hero_stat) {
+      visibility: hidden !important;
+    }
+
+    @media not all and (max-width: 479px) and (min-width: 0px) {
+      @media not all and (max-width: 767px) and (min-width: 480px) {
+        @media not all and (max-width: 991px) and (min-width: 768px) {
+          html.w-mod-js:not(.w-mod-ix3):is([data-slide-card]) {
+            visibility: hidden !important;
+          }
+
+          html.w-mod-js:not(.w-mod-ix3):is([data-slide-card]) * {
+            visibility: hidden !important;
+          }
+        }
+      }
+    }
+
+    @media not all and (max-width: 479px) and (min-width: 0px) {
+      @media not all and (max-width: 767px) and (min-width: 480px) {
+        @media not all and (max-width: 991px) and (min-width: 768px) {
+          html.w-mod-js:not(.w-mod-ix3) :is([data-slide-card], .about_track .year_wrapper, .step_item_info_wrap:has(+ .step_icon)) {
+            visibility: hidden !important;
+          }
+        }
+      }
+    }
+
+    @media not all and (max-width: 479px) and (min-width: 0px) {
+      @media not all and (max-width: 767px) and (min-width: 480px) {
+        html.w-mod-js:not(.w-mod-ix3) :is(.work_items_track [data-work-item]:nth-child(2), .work_items_track [data-work-item]:nth-child(3), .work_items_track [data-work-item]:nth-child(4)) {
+          visibility: hidden !important;
+        }
+      }
+    }
+
+    @media not all and (min-width: 992px) {
+      html.w-mod-js:not(.w-mod-ix3) :is(.about_track .year_wrapper) {
+        visibility: hidden !important;
+      }
+    }
+  

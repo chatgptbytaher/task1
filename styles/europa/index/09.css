@@ -1,0 +1,136 @@
+
+    /* Speaker section rebuilt to match the supplied testimonial-card reference */
+    .eu-speakers-reference {
+      background: #fff !important;
+      color: #171717 !important;
+      padding: clamp(70px, 8vw, 116px) 0 !important
+    }
+
+    .eu-speakers-reference .eu-wrap {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 5vw
+    }
+
+    .eu-speakers-reference-head {
+      text-align: center;
+      max-width: 850px;
+      margin: 0 auto 54px
+    }
+
+    .eu-speakers-reference-head .eu-kicker {
+      letter-spacing: .16em;
+      color: #858585
+    }
+
+    .eu-speakers-reference-head .eu-title {
+      font-size: clamp(2.7rem, 5vw, 4.8rem);
+      line-height: 1.03;
+      letter-spacing: -.055em;
+      margin: 16px auto 0;
+      max-width: 820px
+    }
+
+    .eu-speakers-reference-head .eu-title em {
+      font-family: Georgia, serif;
+      font-weight: 400
+    }
+
+    .eu-speakers-reference-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px
+    }
+
+    .eu-speaker-quote {
+      background: #fafafa;
+      border: 1px solid #f1f1f1;
+      border-radius: 12px;
+      padding: clamp(24px, 2.5vw, 36px);
+      min-height: 270px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, .025)
+    }
+
+    .eu-speaker-topic {
+      display: inline-flex;
+      align-self: flex-start;
+      color: #c65a32;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      line-height: 1.35
+    }
+
+    .eu-speaker-session-copy {
+      font-size: clamp(18px, 1.55vw, 23px);
+      line-height: 1.28;
+      letter-spacing: -.025em;
+      color: #262626;
+      margin: 24px 0 30px;
+      max-width: 30ch
+    }
+
+    .eu-speaker-person {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: auto
+    }
+
+    .eu-speaker-person img {
+      width: 54px !important;
+      height: 54px !important;
+      min-width: 54px;
+      max-width: 54px;
+      aspect-ratio: 1/1 !important;
+      object-fit: cover !important;
+      border-radius: 50% !important
+    }
+
+    .eu-speaker-person strong {
+      display: block;
+      font-size: 15px;
+      line-height: 1.25;
+      color: #171717
+    }
+
+    .eu-speaker-person span {
+      display: block;
+      font-size: 12px;
+      line-height: 1.4;
+      color: #777;
+      margin-top: 4px
+    }
+
+    .eu-speakers-reference .eu-disclaimer {
+      font-size: 12px;
+      color: #999;
+      margin-top: 24px;
+      text-align: center
+    }
+
+    @media(max-width:900px) {
+      .eu-speakers-reference-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px
+      }
+    }
+
+    @media(max-width:560px) {
+      .eu-speakers-reference-grid {
+        grid-template-columns: 1fr
+      }
+
+      .eu-speaker-quote {
+        min-height: 230px
+      }
+
+      .eu-speakers-reference-head {
+        margin-bottom: 32px
+      }
+    }
+  

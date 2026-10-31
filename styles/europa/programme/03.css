@@ -1,0 +1,48 @@
+
+  .button_primary:not(.cta_button), .button_primary:not(.cta_button) a,
+  button.button_primary, a.button_primary {
+    --europa-button-arrow-size: 18px;
+    gap: 14px;
+    transition: transform .28s cubic-bezier(.22,1,.36,1), background-color .28s ease, color .28s ease, border-color .28s ease;
+  }
+  .button_primary:not(.cta_button)::after {
+    content: "";
+    display: inline-block;
+    flex: 0 0 var(--europa-button-arrow-size);
+    width: var(--europa-button-arrow-size);
+    height: var(--europa-button-arrow-size);
+    background-image: url("https://cdn.prod.website-files.com/69ff27cefc7a739342b514b4/6a00952b08d6e165aa3c53b6_Vector.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateX(0);
+    transition: transform .38s cubic-bezier(.22,1,.36,1), filter .28s ease;
+    pointer-events: none;
+  }
+  .button_primary:not(.cta_button):hover::after,
+  .button_primary:not(.cta_button):focus-visible::after {
+    transform: translateX(5px);
+  }
+  .button_primary:not(.cta_button):active { transform: scale(.985); }
+  .button_primary .europa-button-label {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    line-height: 1.15;
+    height: 1.15em;
+  }
+  .button_primary .europa-button-label > span {
+    display: block;
+    white-space: nowrap;
+    line-height: 1.15;
+    transform: translateY(0);
+    transition: transform .38s cubic-bezier(.22,1,.36,1);
+  }
+  .button_primary:hover .europa-button-label > span,
+  .button_primary:focus-visible .europa-button-label > span { transform: translateY(-100%); }
+  .button_primary:focus-visible { outline-offset: 4px; }
+  @media (prefers-reduced-motion: reduce) {
+    .button_primary, .button_primary::after, .button_primary .europa-button-label > span { transition-duration: .01ms !important; }
+  }

@@ -1,0 +1,154 @@
+
+    /* Approved speaker mosaic — Concept 2 */
+    .eu-speakers-mosaic {
+      background: #102c2a !important;
+      color: #f4f0e8 !important;
+      padding: clamp(64px, 8vw, 120px) 0 !important
+    }
+
+    .eu-speakers-mosaic .eu-wrap {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 5vw
+    }
+
+    .eu-speakers-head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto 38px;
+      max-width: 760px
+    }
+
+    .eu-speakers-head .eu-title {
+      margin: 10px 0 12px
+    }
+
+    .eu-speakers-head .eu-lead {
+      color: rgba(244, 240, 232, .78);
+      max-width: 560px
+    }
+
+    .eu-speaker-mosaic {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px
+    }
+
+    .eu-speaker-tile {
+      aspect-ratio: 1/1;
+      min-width: 0;
+      overflow: hidden;
+      position: relative
+    }
+
+    .eu-speaker-photo {
+      background: #1d3431
+    }
+
+    .eu-speaker-photo img {
+      display: block;
+      width: 100% !important;
+      height: 100% !important;
+      aspect-ratio: 1/1 !important;
+      object-fit: cover !important;
+      object-position: center !important
+    }
+
+    .eu-speaker-copy {
+      padding: clamp(16px, 2.2vw, 32px);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end
+    }
+
+    .eu-speaker-teal {
+      background: #1c4944;
+      color: #f4f0e8
+    }
+
+    .eu-speaker-coral {
+      background: #e5a18a;
+      color: #18312e
+    }
+
+    .eu-speaker-number {
+      font-size: 11px;
+      letter-spacing: .14em;
+      font-weight: 700;
+      margin-bottom: auto;
+      opacity: .8
+    }
+
+    .eu-speaker-copy h3 {
+      font-family: 'Montserrat', sans-serif !important;
+      font-size: clamp(19px, 2vw, 30px);
+      line-height: 1.02;
+      margin: 22px 0 9px;
+      letter-spacing: -.04em
+    }
+
+    .eu-speaker-role {
+      font-size: clamp(12px, 1vw, 15px);
+      font-weight: 600;
+      margin: 0 0 10px
+    }
+
+    .eu-speaker-focus {
+      font-size: 13px;
+      line-height: 1.35;
+      margin: 0 0 16px;
+      opacity: .8
+    }
+
+    .eu-speaker-session {
+      border-top: 1px solid currentColor;
+      padding-top: 12px;
+      font-size: 12px;
+      line-height: 1.3;
+      font-weight: 600
+    }
+
+    .eu-speakers-mosaic .eu-disclaimer {
+      color: rgba(244, 240, 232, .65);
+      font-size: 12px;
+      margin-top: 18px
+    }
+
+    @media(max-width:900px) {
+      .eu-speaker-mosaic {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+      }
+
+      .eu-speaker-tile {
+        aspect-ratio: 1/1
+      }
+    }
+
+    @media(max-width:520px) {
+      .eu-speaker-mosaic {
+        gap: 8px
+      }
+
+      .eu-speaker-copy {
+        padding: 14px
+      }
+
+      .eu-speaker-copy h3 {
+        font-size: 18px
+      }
+
+      .eu-speaker-role,
+      .eu-speaker-focus,
+      .eu-speaker-session {
+        font-size: 11px
+      }
+    }
+
+    /* Consistent image frames for content photography; logos and interface icons are excluded. */
+    .eu-section img:not(.brand-logo):not([class*="icon"]):not([class*="logo"]),
+    .testimonial_section img:not(.brand-logo):not([class*="icon"]):not([class*="logo"]) {
+      object-fit: cover
+    }
+  

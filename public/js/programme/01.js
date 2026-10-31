@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('#faq .europa-faq-item').forEach(function(item){item.addEventListener('toggle',function(){if(item.open){document.querySelectorAll('#faq .europa-faq-item').forEach(function(other){if(other!==item)other.open=false;});}});});});

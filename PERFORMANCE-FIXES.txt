@@ -1,0 +1,17 @@
+EUROPA PERFORMANCE / CONTENT VISIBILITY FIXES
+
+Changes made:
+- Removed the Webflow pre-initialization CSS rules that hid text, headings, hero content, and animation targets until the w-mod-ix3 class appeared. These rules were the direct cause of invisible/late text when Webflow initialization was delayed or failed.
+- Updated the shared SiteScripts loader to start after React mounts instead of waiting for window.load (which waits for images and other dependent resources).
+- Changed script loading to begin downloads together while preserving classic-script execution order, reducing the sequential network waterfall.
+- Kept lifecycle event replay so the existing Webflow/GSAP initialization callbacks can still run after the original scripts are ready.
+- Corrected invalid React inline display values on the disabled preloader components.
+
+Files changed:
+- components/all_components/site-scripts.tsx
+- components/all_components/{homepage,about,programme,speakers,tracks}/preloader.tsx
+- styles/europa/{index,about,programme,speakers,tracks}/01.css
+
+Validation:
+- JavaScript syntax checks passed for the checked custom scripts.
+- A full Next.js/TypeScript build was not run because node_modules are not present in the supplied project environment. Run `npm install` followed by `npm run build` locally.

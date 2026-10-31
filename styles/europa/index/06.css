@@ -1,0 +1,188 @@
+
+    /* Section-specific layout corrections. Typography, colors and controls inherit from the original template. */
+    .europa-speakers-section .testimonial_cards {
+      display: grid !important;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      align-items: stretch;
+      overflow: visible !important;
+      transform: none !important;
+      width: 100% !important;
+    }
+
+    .europa-speakers-section .testimonial_card {
+      position: relative !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: flex-start;
+      min-width: 0 !important;
+      width: auto !important;
+      max-width: none !important;
+      height: 100%;
+      padding: 28px !important;
+      border: 1px solid rgba(0, 0, 0, .10);
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    .europa-speakers-section .testimonial_card h3 {
+      margin: 0 0 10px;
+    }
+
+    .europa-speakers-section .testimonial_card p {
+      margin: 0 0 8px;
+    }
+
+    .europa-speakers-section .testimonial_card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .europa-faq-section .europa-faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+      border-top: 1px solid rgba(0, 0, 0, .14);
+    }
+
+    .europa-faq-section .europa-faq-item {
+      border-bottom: 1px solid rgba(0, 0, 0, .14);
+    }
+
+    .europa-faq-section .europa-faq-item summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 20px 0;
+      font: inherit;
+      font-weight: 600;
+    }
+
+    .europa-faq-section .europa-faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .europa-faq-section .europa-faq-item summary:after {
+      content: '+';
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1;
+      flex: 0 0 auto;
+    }
+
+    .europa-faq-section .europa-faq-item[open] summary:after {
+      content: '−';
+    }
+
+    .europa-faq-section .europa-faq-answer {
+      padding: 0 40px 20px 0;
+      max-width: 760px;
+    }
+
+    .europa-faq-section .europa-faq-answer p {
+      margin: 0;
+    }
+
+    .europa-contact-section .europa-contact-layout {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: clamp(40px, 8vw, 120px);
+    }
+
+    .europa-contact-section .europa-contact-copy {
+      flex: 1 1 42%;
+      min-width: 0;
+      max-width: 480px;
+    }
+
+    .europa-contact-section .europa-contact-form-wrap {
+      flex: 1 1 50%;
+      min-width: 0;
+    }
+
+    .europa-contact-section form {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .europa-contact-section form label {
+      margin: 4px 0 0;
+    }
+
+    .europa-contact-section form input,
+    .europa-contact-section form select,
+    .europa-contact-section form textarea {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: none;
+      min-height: 52px;
+      padding: 14px 16px;
+      border: 1px solid rgba(0, 0, 0, .18);
+      border-radius: 6px;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+    }
+
+    .europa-contact-section form textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .europa-contact-section form button {
+      align-self: flex-start;
+      margin-top: 12px;
+    }
+
+    .europa-contact-section .europa-form-note {
+      font-size: .85em;
+      opacity: .72;
+      margin-top: 4px;
+    }
+
+    @media(max-width:991px) {
+      .europa-speakers-section .testimonial_cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px
+      }
+
+      .europa-contact-section .europa-contact-layout {
+        gap: 36px
+      }
+    }
+
+    @media(max-width:767px) {
+      .europa-speakers-section .testimonial_cards {
+        grid-template-columns: 1fr;
+        gap: 14px
+      }
+
+      .europa-speakers-section .testimonial_card {
+        padding: 22px !important
+      }
+
+      .europa-contact-section .europa-contact-layout {
+        flex-direction: column;
+        gap: 28px
+      }
+
+      .europa-contact-section .europa-contact-copy,
+      .europa-contact-section .europa-contact-form-wrap {
+        flex-basis: auto;
+        width: 100%;
+        max-width: none
+      }
+
+      .europa-faq-section .europa-faq-item summary {
+        padding: 17px 0;
+        gap: 14px
+      }
+    }
+  

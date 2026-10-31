@@ -1,0 +1,23 @@
+
+/* Explicit speaker section and consistent image geometry */
+.eu-speakers-final{display:block!important;visibility:visible!important;opacity:1!important;background:#fff!important;color:#171717!important;padding:clamp(72px,8vw,120px) 0!important}
+.eu-speakers-final .eu-wrap{max-width:1320px;margin:0 auto;padding:0 5vw}
+.eu-speakers-final-head{text-align:center;max-width:800px;margin:0 auto 48px}
+.eu-speakers-final-head .eu-kicker{justify-content:center}
+.eu-speakers-final-head .eu-title{font-size:clamp(38px,4.3vw,62px);line-height:1.03;letter-spacing:-.05em;margin:0 auto 14px}
+.eu-speakers-final-head .eu-lead{max-width:620px;margin:0 auto;color:#777}
+.eu-speakers-final-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.eu-speaker-card{background:#fafafa;border:1px solid #ededed;border-radius:10px;padding:28px;min-height:300px;display:flex!important;flex-direction:column;justify-content:space-between;opacity:1}
+.eu-speaker-card-top{display:flex;flex-direction:column;gap:16px}
+.eu-speaker-index{font-size:10px;font-weight:700;letter-spacing:.16em;color:#c75c36}
+.eu-speaker-focus{font-size:12px;line-height:1.35;text-transform:uppercase;letter-spacing:.07em;color:#777}
+.eu-speaker-bio{font-size:19px;line-height:1.35;letter-spacing:-.02em;color:#252525;margin:24px 0 30px;max-width:32ch}
+.eu-speaker-person{display:flex;align-items:center;gap:14px;margin-top:auto;min-height:64px}
+.eu-speaker-person img{display:block!important;width:64px!important;height:64px!important;min-width:64px!important;max-width:64px!important;min-height:64px!important;max-height:64px!important;aspect-ratio:1/1!important;object-fit:cover!important;object-position:center!important;border-radius:50%!important;flex:0 0 64px}
+.eu-speaker-person strong{display:block;font-size:15px;line-height:1.25;color:#171717}
+.eu-speaker-person span{display:block;font-size:12px;line-height:1.4;color:#777;margin-top:4px}
+.eu-speakers-disclaimer{text-align:center;font-size:12px;color:#999;margin:24px 0 0}
+.eu-price-card{grid-template-columns:minmax(0,1fr) 34%!important;min-height:390px!important;overflow:hidden}
+.eu-price-card .eu-price-photo{display:block!important;width:100%!important;height:390px!important;min-height:390px!important;max-height:390px!important;object-fit:cover!important;object-position:center!important;aspect-ratio:auto!important}
+@media(max-width:900px){.eu-speakers-final-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.eu-price-card .eu-price-photo{height:340px!important;min-height:340px!important;max-height:340px!important}}
+@media(max-width:600px){.eu-speakers-final-grid{grid-template-columns:1fr!important}.eu-speaker-card{min-height:260px;padding:22px}.eu-price-card{grid-template-columns:minmax(0,1fr) 32%!important;min-height:350px!important}.eu-price-card .eu-price-photo{height:350px!important;min-height:350px!important;max-height:350px!important}}
